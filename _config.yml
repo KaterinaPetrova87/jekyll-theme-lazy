@@ -1,0 +1,23 @@
+title: Jekyll Theme - Lazy
+email: katerina.petrova@abv.bg
+description: >- # this means to ignore newlines until "baseurl:"
+ This is very minimalistic and beautiful theme for jekyll.
+baseurl: "/jekyll-theme-lazy" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+github_username:  KaterinaPetrova87
+destination: "docs"
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - gulpfile.js
+  - docs
+  - node_modules
+  - scss
