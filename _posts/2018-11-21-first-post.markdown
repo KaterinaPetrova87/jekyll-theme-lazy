@@ -1,6 +1,6 @@
 ---
 layout: site
-title:  "First Post For Testing"
+title:  "First Post For Testing The Theme"
 date:   2018-11-21 15:30:19 +0200
 # categories: jekyll update
 ---
