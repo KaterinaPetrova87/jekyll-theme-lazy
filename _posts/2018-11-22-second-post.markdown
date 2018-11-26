@@ -1,8 +1,8 @@
 ---
 layout: site
+type: post
 title:  "Second Post For Testing The Theme"
 date:   2018-11-22 21:21:21 +0200
-# categories: jekyll update
 ---
 
 ## Title Level 2

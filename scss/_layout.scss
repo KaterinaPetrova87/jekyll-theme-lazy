@@ -6,3 +6,23 @@
     max-width: 50rem;
     margin: 0 auto;
 }
+
+body.login {
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 0;
+    display: flex;
+}
+
+body.login .site {
+    background: #EEE;
+    border: 4rem solid #FFF;
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body.login .site-header {
+    display: none;
+}
