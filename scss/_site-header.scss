@@ -8,24 +8,26 @@ body {
     align-items: center;
     position: fixed;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 60%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(white,1) 60%,rgba(white,0) 100%);
     padding: var(--spacing-site);
     padding-bottom: 4rem;
     top: 0;
     left: 0;
+    @include mq("tablet", max) {
+        background: greenyellow;
+    }
 }
 
 .site-title {
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
     border-bottom: 2px solid #DDD;
-}
-
-.site-title a {
-    font-size: 1.8em;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
+    & a {
+        font-size: 1.8em;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .site-description {

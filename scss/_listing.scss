@@ -4,56 +4,48 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.listing li {
-    display: block;
-    list-style: none;
-    flex: 0 0 31%;
-}
-
-.listing a {
-    display: block;
-    text-decoration: none;
-    background: white;
-    color: #333;
-    border-radius: 0.3em;
-    padding: 1rem 1.5rem;
-    position: relative;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in, box-shadow 0.3s ease;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-}
-
-.listing a::before {
-    display: block;
-    content: '';
-    border-radius: 0.3em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: 0 0 4rem 0.8rem rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
-}
-
-.listing a:hover {
-    background: #333;
-    color: white;
-    // box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.3);
-}
-
-.listing a:hover::before {
-    opacity: 1;
-}
-
-.listing a span {
-    display: block;
-}
-
-.listing a .title {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 4rem;
+    li {
+        display: block;
+        list-style: none;
+        flex: 0 0 31%;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        background: white;
+        color: #333;
+        border-radius: 0.3em;
+        padding: 1rem 1.5rem;
+        position: relative;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in, box-shadow 0.3s ease;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+        &::before {
+            display: block;
+            content: '';
+            border-radius: 0.3em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: 0 0 4rem 0.8rem rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+        }
+        &:hover {
+            background: #333;
+            color: white;
+            &::before {
+                opacity: 1;
+            }
+        }
+        & span {
+            display: block;
+        }
+        & .title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+        }
+    }
 }

@@ -1,0 +1,35 @@
+$btnColors: (
+    "apple": rgb(106, 176, 76),
+    "pink": rgb(235, 77, 75),
+    "blurple": rgb(72, 52, 212),
+    "orange": rgb(240, 147, 43)
+);
+
+@function btn-text-color($btnColor) {
+    @if(lightness($btnColor) > 50) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 1em 1.5em;
+    border-radius: 0.3em;
+    font-weight: bold;
+    margin: 3rem 3rem 3rem 0;
+    text-decoration: none;
+    background: #DDD;
+    color: #333;
+    box-shadow: 0 0 1rem 0 rgba(black, 0.3);
+    border: 2px solid white;
+}
+
+@each $name, $color in $btnColors {
+    .button.#{$name} {
+        background: $color;
+        color: btn-text-color($color);
+    }
+}

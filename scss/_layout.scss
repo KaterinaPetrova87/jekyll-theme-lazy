@@ -1,28 +1,25 @@
 .site {
-    padding: var(--spacing-site, 2em);
-}
-
-.site-content {
+  padding: var(--spacing-site, 2em);
+  @at-root #{&}-content {
     max-width: 50rem;
     margin: 0 auto;
+  }
 }
 
 body.login {
-    height: 100vh;
-    overflow: hidden;
-    padding-top: 0;
-    display: flex;
-}
-
-body.login .site {
-    background: #EEE;
-    border: 4rem solid #FFF;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 0;
+  display: flex;
+  .site {
+    background: #eee;
+    border: 4rem solid #fff;
     display: flex;
     flex: 1 0 auto;
     align-items: center;
     justify-content: space-between;
-}
-
-body.login .site-header {
-    display: none;
+    @at-root #{&}-header {
+        display: none;
+      }
+  }
 }
